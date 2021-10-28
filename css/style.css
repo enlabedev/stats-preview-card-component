@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.bg{
+    background:hsl(233, 47%, 7%);
+    font-family: 'Inter', sans-serif;
+    color:hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.component{
+    width: 327px;
+    margin:88px auto;
+}
+
+.component-img{
+    background: url('../images/image-header-mobile.jpg') hsl(277, 64%, 61%) no-repeat center / cover;
+    background-blend-mode: multiply;
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    height: 240px;
+    margin:0 auto;
+}
+
+.component-content{
+    background: hsl(244, 38%, 16%);
+    padding:45px 32px 37px 32px;
+    border-radius: 0 0 8px 8px;
+}
+
+.component-headings{
+    color: hsl(0, 0%, 100%);
+    font-size: 28px;
+    margin: 0 0 12px;
+    text-align: center;
+}
+.component-focus{
+    color: hsl(277, 64%, 61%);
+    margin:0 0 18px;
+}
+
+.component-paragraph{
+    text-align: center;
+    line-height: 1.5;
+    margin: 0 0 45px;
+}
+
+.component-list{
+    font-size: 12px;
+    text-align: center;
+    margin:0 0 33px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.component-list--strong{
+    font-size: 24px;
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 0;
+    text-transform: none;
+}
+.component-list--last{
+    margin:0;
+}
+
+@media (min-width: 1440px) {
+    .bg{
+        display: flex;
+        align-items: center;
+        height: 100vh;
+    }
+    .component{
+        width: 1110px;
+        display: flex;
+        align-items: stretch;
+        min-height: 446px;
+        margin:0 auto;
+    }
+    .component-content{
+        order: 1;
+        display: flex;
+        align-items: center;
+        padding:71px 95px 64px 72px;
+        border-radius: 8px 0 0 8px;
+    }
+    .component-headings{
+        text-align: left;
+    }
+    .component-paragraph{
+        width: 350px;
+        text-align: left;
+    }
+    .component-img{
+        background-image: url('../images/image-header-desktop.jpg');
+        order: 2;
+        height: auto;
+        border-radius: 0 8px 8px 0;
+    }
+    .component-lists{
+        display: flex;
+        justify-content: space-between;
+        width: 350px;
+    }
+
+}
