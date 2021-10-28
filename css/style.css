@@ -87,6 +87,7 @@
     .component-headings{
         text-align: left;
         font-size: 36px;
+        margin:0 0 21px;
     }
     .component-paragraph{
         width: 350px;
