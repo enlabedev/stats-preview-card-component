@@ -90,6 +90,7 @@
     .component-paragraph{
         width: 350px;
         text-align: left;
+        margin:0 0 77px;
     }
     .component-img{
         background-image: url('../images/image-header-desktop.jpg');
